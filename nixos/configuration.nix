@@ -97,7 +97,6 @@
       displayManager.gdm.enable = true;
       enable = true;
       layout = "us,ru";
-      xkbOptions = "grp:caps_toggle";
       xkbVariant = "";
     };
   };
