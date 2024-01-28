@@ -31,6 +31,7 @@
   hardware = {
     opengl = {
       enable = true;
+      driSupport = true;
       extraPackages = with pkgs; [
         intel-media-driver
         vaapiIntel
@@ -65,6 +66,7 @@
   };
 
   programs = {
+    sway.enable = true;
     fish = {
       enable = true;
       promptInit = ''
@@ -105,14 +107,18 @@
 
   time.timeZone = "Europe/Moscow";
 
-  users.users = {
-    jsus = {
-      extraGroups = [ "wheel" "docker" "networkmanager" "tss" ];
-      initialPassword = "12345";
-      isNormalUser = true;
-      shell = pkgs.fish;
+  users = {
+    mutableUsers = false; # Hides System Administrator account
+    users = {
+      jsus = {
+        extraGroups = [ "wheel" "docker" "networkmanager" "tss" ];
+        initialPassword = "12345";
+        isNormalUser = true;
+        shell = pkgs.fish;
+      };
     };
   };
 
   virtualisation.docker = { enable = true; };
+
 }
