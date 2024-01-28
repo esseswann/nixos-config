@@ -3,39 +3,24 @@
     appindicator
     clipboard-history
     dash-to-panel
-    vitals
     primary-input-on-lockscreen
-    # nasa-apod
+    vitals
   ];
 
   dconf.settings = {
-    "org/gnome/shell" = {
-      disable-user-extensions = false;
-      enabled-extensions = [
-        # "nasa_apod@elinvention.ovh"
-        "clipboard-history@alexsaveau.dev"
-        "dash-to-panel@jderose9.github.com"
-        "appindicatorsupport@rgcjonas.gmail.com"
-        "Vitals@CoreCodingom"
-        "primary_input_on_lockscreen@sagidayan.com"
-      ];
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      enable-hot-corners = false;
+      show-battery-percentage = true;
     };
 
-    "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [
-        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-      ];
+    "org/gnome/desktop/input-sources" = {
+      per-window = false;
+      xkb-options = [ "grp:caps_toggle" ];
     };
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" =
-      {
-        binding = "<Super>Return";
-        command = "alacritty";
-        name = "open-terminal";
-      };
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Super><Shift>q" ];
-      toggle-maximized = [ "<Super>f" ];
       switch-to-workspace-1 = [ "<Super>1" ];
       switch-to-workspace-2 = [ "<Super>2" ];
       switch-to-workspace-3 = [ "<Super>3" ];
@@ -43,14 +28,49 @@
       switch-to-workspace-5 = [ "<Super>5" ];
       switch-to-workspace-6 = [ "<Super>6" ];
       switch-to-workspace-7 = [ "<Super>7" ];
-      move-to-workspace-1 = [ "<Super><Shift>1" ];
-      move-to-workspace-2 = [ "<Super><Shift>2" ];
-      move-to-workspace-3 = [ "<Super><Shift>3" ];
-      move-to-workspace-4 = [ "<Super><Shift>4" ];
-      move-to-workspace-5 = [ "<Super><Shift>5" ];
-      move-to-workspace-6 = [ "<Super><Shift>6" ];
-      move-to-workspace-7 = [ "<Super><Shift>7" ];
+      toggle-maximized = [ "<Super>f" ];
     };
+
+    "org/gnome/desktop/wm/preferences" = { num-workspaces = 7; };
+
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" =
+      {
+        binding = "<Super>Return";
+        command = "alacritty";
+        name = "open-terminal";
+      };
+
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+      night-light-temperature = 3700;
+      night-light-schedule-automatic = true;
+    };
+
+    "org/gnome/shell" = {
+      disable-user-extensions = false;
+      favorite-apps = [
+        "yandex-browser.desktop"
+        "org.telegram.desktop.desktop"
+        "thunderbird.desktop"
+        "Alacritty.desktop"
+      ];
+      enabled-extensions = [
+        "appindicatorsupport@rgcjonas.gmail.com"
+        "clipboard-history@alexsaveau.dev"
+        "dash-to-panel@jderose9.github.com"
+        "Vitals@CoreCodingom"
+        "primary_input_on_lockscreen@sagidayan.com"
+      ];
+    };
+
+    "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
+
     "org/gnome/shell/keybindings" = {
       switch-to-application-1 = [ ];
       switch-to-application-2 = [ ];
@@ -59,17 +79,6 @@
       switch-to-application-5 = [ ];
       switch-to-application-6 = [ ];
       switch-to-application-7 = [ ];
-    };
-    "org/gnome/desktop/input-sources" = { per-window = false; };
-    "org/gnome/desktop/wm/preferences" = { num-workspaces = 7; };
-    "org/gnome/desktop/interface" = { show-battery-percentage = true; };
-    "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
-    "org/gnome/desktop/input-sources" = {
-      xkb-options = [ "grp:caps_toggle" ];
-    };
-    "org/gnome/desktop/interface" = {
-      enable-hot-corners = false;
-      color-scheme = "prefer-dark";
     };
   };
 }
