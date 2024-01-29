@@ -12,6 +12,7 @@
       telegram-desktop
       thunderbird
       vscode
+      vlc
     ];
     sessionVariables = { EDITOR = "vim"; };
     stateVersion = "23.11";
