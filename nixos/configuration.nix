@@ -119,6 +119,10 @@
     };
   };
 
+  networking.extraHosts = ''
+    127.0.0.1 zifer.site
+  '';
+
   virtualisation.docker = { enable = true; };
 
 }
