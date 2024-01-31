@@ -253,15 +253,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1706058867,
-        "narHash": "sha256-1nUJWe4pt7b+mZfkjUYomRcfqpTbJ1hWp4IZ42vq8vY=",
-        "owner": "miuirussia",
+        "lastModified": 1706657582,
+        "narHash": "sha256-xhnjJXW41/FXxYk7FsW93+m50W6wgaMIYfg6x6b02oQ=",
+        "owner": "esseswann",
         "repo": "yandex-browser.nix",
-        "rev": "599b2e7a121136981f5d9724b934aeaa2ea65de2",
+        "rev": "8ce6ccbd7f23d5bccdc167e39868e41c6497d298",
         "type": "github"
       },
       "original": {
-        "owner": "miuirussia",
+        "owner": "esseswann",
+        "ref": "feat/gpu",
         "repo": "yandex-browser.nix",
         "type": "github"
       }

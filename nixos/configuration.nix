@@ -108,11 +108,10 @@
   time.timeZone = "Europe/Moscow";
 
   users = {
-    mutableUsers = false; # Hides System Administrator account
+    mutableUsers = true;
     users = {
       jsus = {
         extraGroups = [ "wheel" "docker" "networkmanager" "tss" ];
-        initialPassword = "12345";
         isNormalUser = true;
         shell = pkgs.fish;
       };
