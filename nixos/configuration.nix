@@ -29,16 +29,17 @@
   };
 
   hardware = {
-    opengl = {
-      enable = true;
-      driSupport = true;
-      extraPackages = with pkgs; [
-        intel-media-driver
-        vaapiIntel
-        vaapiVdpau
-        libvdpau-va-gl
-      ];
-    };
+    # opengl = {
+    #   enable = true;
+    #   driSupport = true;
+    #   extraPackages = with pkgs; [
+    #     intel-media-driver
+    #     vaapiIntel
+    #     vaapiVdpau
+    #     libvdpau-va-gl
+    #     pkgs.mesa.drivers
+    #   ];
+    # };
     pulseaudio.enable = false;
   };
 
@@ -59,9 +60,6 @@
   nixpkgs = {
     config = {
       allowUnfree = true;
-      packageOverrides = pkgs: {
-        vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
-      };
     };
   };
 

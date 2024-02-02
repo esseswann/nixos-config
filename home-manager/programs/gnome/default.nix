@@ -1,10 +1,12 @@
 { pkgs, ... }: {
+
   home.packages = with pkgs.gnomeExtensions; [
-    appindicator
+    # appindicator
     clipboard-history
-    dash-to-panel
-    primary-input-on-lockscreen
-    vitals
+    hide-top-bar
+    # dash-to-panel
+    # primary-input-on-lockscreen
+    # vitals
   ];
 
   dconf.settings = {
@@ -57,15 +59,17 @@
       favorite-apps = [
         "yandex-browser.desktop"
         "org.telegram.desktop.desktop"
+        "code.desktop"
         "thunderbird.desktop"
         "Alacritty.desktop"
       ];
       enabled-extensions = [
-        "appindicatorsupport@rgcjonas.gmail.com"
+        # "appindicatorsupport@rgcjonas.gmail.com"
         "clipboard-history@alexsaveau.dev"
-        "dash-to-panel@jderose9.github.com"
-        "Vitals@CoreCodingom"
-        "primary_input_on_lockscreen@sagidayan.com"
+        "hidetopbar@mathieu.bidon.ca" # does not work right now
+        # "dash-to-panel@jderose9.github.com"
+        # "Vitals@CoreCodingom"
+        # "primary_input_on_lockscreen@sagidayan.com"
       ];
     };
 
