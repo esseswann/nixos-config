@@ -253,16 +253,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1706659327,
-        "narHash": "sha256-Gcj0Dto9eyF5EkhZgLOQ2leO5KGbuWJB+4fjbbDkItU=",
+        "lastModified": 1707435030,
+        "narHash": "sha256-dpHdZnPOWb6BNiMRFU9mqiK/ewXiT9QkXgNWHFp751U=",
         "owner": "esseswann",
         "repo": "yandex-browser.nix",
-        "rev": "ad2f0022eb6979da4579df55ff3dde334d1718a4",
+        "rev": "d0e7581ca0c0a9dc25ec817f21c0e591ca71d25c",
         "type": "github"
       },
       "original": {
         "owner": "esseswann",
-        "ref": "feat/gpu",
+        "ref": "feat/url-fix",
         "repo": "yandex-browser.nix",
         "type": "github"
       }

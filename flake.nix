@@ -11,7 +11,7 @@
     };
     yandex-browser = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:esseswann/yandex-browser.nix/feat/gpu";
+      url = "github:esseswann/yandex-browser.nix/feat/url-fix";
     };
   };
 
