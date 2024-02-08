@@ -57,11 +57,7 @@
     };
   };
 
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
+  nixpkgs = { config = { allowUnfree = true; }; };
 
   programs = {
     sway.enable = true;
@@ -96,8 +92,7 @@
       desktopManager.gnome.enable = true;
       displayManager.gdm.enable = true;
       enable = true;
-      layout = "us,ru";
-      xkbVariant = "";
+      xkb = { layout = "us,ru"; };
     };
   };
 
