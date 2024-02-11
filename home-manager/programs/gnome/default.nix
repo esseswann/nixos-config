@@ -1,13 +1,14 @@
 { pkgs, ... }: {
 
-  home.packages = with pkgs.gnomeExtensions; [
-    # appindicator
-    clipboard-history
-    hide-top-bar
-    # dash-to-panel
-    # primary-input-on-lockscreen
-    # vitals
-  ];
+  home.packages = with pkgs.gnomeExtensions;
+    [
+      # appindicator
+      clipboard-history
+      # hide-top-bar
+      # dash-to-panel
+      # primary-input-on-lockscreen
+      # vitals
+    ];
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
@@ -66,7 +67,7 @@
       enabled-extensions = [
         # "appindicatorsupport@rgcjonas.gmail.com"
         "clipboard-history@alexsaveau.dev"
-        "hidetopbar@mathieu.bidon.ca" # does not work right now
+        # "hidetopbar@mathieu.bidon.ca" # does not work right now
         # "dash-to-panel@jderose9.github.com"
         # "Vitals@CoreCodingom"
         # "primary_input_on_lockscreen@sagidayan.com"
