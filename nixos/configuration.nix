@@ -1,6 +1,6 @@
 { inputs, lib, config, pkgs, ... }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_6_7;
+    kernelPackages = pkgs.linuxPackages_latest;
     loader = {
       efi = {
         canTouchEfiVariables = true;
@@ -110,10 +110,6 @@
       };
     };
   };
-
-  networking.extraHosts = ''
-    127.0.0.1 zifer.site
-  '';
 
   virtualisation.docker = { enable = true; };
 

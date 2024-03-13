@@ -147,15 +147,6 @@ in {
       };
       nvim-cmp = {
         enable = true;
-        sources = [
-          { name = "path"; }
-          { name = "buffer"; }
-          {
-            name = "nvim_lsp";
-          }
-          # { name = "luasnip"; }
-        ];
-        snippet = { expand = "luasnip"; };
         mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Tab>" = {
