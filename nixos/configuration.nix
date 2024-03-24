@@ -1,6 +1,6 @@
 { inputs, lib, config, pkgs, ... }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_6_8;
     loader = {
       efi = {
         canTouchEfiVariables = true;
