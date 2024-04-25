@@ -12,6 +12,7 @@
       telegram-desktop
       thunderbird
       vscode
+      libreoffice
       vlc
     ];
     sessionVariables = { EDITOR = "vim"; };

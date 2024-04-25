@@ -119,10 +119,7 @@ in {
     highlight.ExtraWhitespace.bg = "red";
     match.ExtraWhitespace = "\\s\\+$";
 
-    colorschemes.kanagawa = {
-      enable = true;
-      transparent = true;
-    };
+    colorschemes.kanagawa = { enable = true; };
 
     plugins = {
       better-escape = {
@@ -279,7 +276,6 @@ in {
       ts-autotag.enable = true;
       nvim-autopairs.enable = true;
       nvim-colorizer.enable = true;
-      comment-nvim.enable = true;
       ts-context-commentstring.enable = true;
     };
   };
