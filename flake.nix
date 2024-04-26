@@ -5,19 +5,15 @@
       url = "github:nix-community/home-manager";
     };
     nixpkgs = { url = "nixpkgs/nixos-unstable"; };
-    nixvim = {
-      inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:nix-community/nixvim";
-    };
     yandex-browser = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:miuirussia/yandex-browser.nix";
     };
   };
 
-  outputs = { home-manager, nixpkgs, nixvim, self, yandex-browser, ... }@inputs:
+  outputs = { home-manager, nixpkgs, self, yandex-browser, ... }@inputs:
     let
-      homeManagerModules = [ nixvim.homeManagerModules.nixvim ];
+      homeManagerModules = [ ];
       inherit (self) outputs;
     in {
       homeConfigurations = {

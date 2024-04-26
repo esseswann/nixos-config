@@ -12,4 +12,4 @@ let
       };
     };
   };
-in [ ./alacritty ./fish ./gnome ./nixvim more ]
+in [ ./alacritty ./fish ./gnome more ]
