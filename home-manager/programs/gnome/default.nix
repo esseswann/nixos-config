@@ -24,13 +24,13 @@
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Super><Shift>q" ];
-      switch-to-workspace-1 = [ "<Super>1" ];
-      switch-to-workspace-2 = [ "<Super>2" ];
-      switch-to-workspace-3 = [ "<Super>3" ];
-      switch-to-workspace-4 = [ "<Super>4" ];
-      switch-to-workspace-5 = [ "<Super>5" ];
-      switch-to-workspace-6 = [ "<Super>6" ];
-      switch-to-workspace-7 = [ "<Super>7" ];
+      # switch-to-workspace-1 = [ "<Super>1" ];
+      # switch-to-workspace-2 = [ "<Super>2" ];
+      # switch-to-workspace-3 = [ "<Super>3" ];
+      # switch-to-workspace-4 = [ "<Super>4" ];
+      # switch-to-workspace-5 = [ "<Super>5" ];
+      # switch-to-workspace-6 = [ "<Super>6" ];
+      # switch-to-workspace-7 = [ "<Super>7" ];
       toggle-maximized = [ "<Super>f" ];
     };
 
@@ -74,16 +74,16 @@
       ];
     };
 
-    "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
+    # "org/gnome/shell/app-switcher" = { current-workspace-only = true; };
 
-    "org/gnome/shell/keybindings" = {
-      switch-to-application-1 = [ ];
-      switch-to-application-2 = [ ];
-      switch-to-application-3 = [ ];
-      switch-to-application-4 = [ ];
-      switch-to-application-5 = [ ];
-      switch-to-application-6 = [ ];
-      switch-to-application-7 = [ ];
-    };
+    # "org/gnome/shell/keybindings" = {
+    #   switch-to-application-1 = [ ];
+    #   switch-to-application-2 = [ ];
+    #   switch-to-application-3 = [ ];
+    #   switch-to-application-4 = [ ];
+    #   switch-to-application-5 = [ ];
+    #   switch-to-application-6 = [ ];
+    #   switch-to-application-7 = [ ];
+    # };
   };
 }
