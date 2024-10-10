@@ -35,6 +35,8 @@
     qbittorrent
     alacritty
     vlc
+    python3
+    gparted
   ];
 
   system.stateVersion = "24.05";
