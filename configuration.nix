@@ -12,6 +12,11 @@
   services.printing.enable = true;
   # programs.firefox.enable = true;
 
+  ## FIXME move to users
+  users.users.jsus = {
+    shell = pkgs.fish;
+  };
+
   programs.fish.enable = true;
   programs.git = {
     enable = true;
@@ -29,6 +34,7 @@
     wine64
     qbittorrent
     alacritty
+    vlc
   ];
 
   system.stateVersion = "24.05";
