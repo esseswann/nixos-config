@@ -11,5 +11,15 @@
     };
   };
 
+  ## FIXME jsus
+  fileSystems."/home/jsus/share" = {
+    device = "/dev/disk/by-label/SHARE";
+    fsType = "ntfs";
+    options = [ 
+      "users" 
+      "nofail"
+    ];
+  };
+
   hardware.opengl.enable = true; 
 }
