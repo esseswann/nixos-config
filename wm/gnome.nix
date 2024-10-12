@@ -50,12 +50,8 @@
               "Alacritty.desktop"
             ];
             enabled-extensions = [
-              # "appindicatorsupport@rgcjonas.gmail.com"
               "clipboard-history@alexsaveau.dev"
-              # "hidetopbar@mathieu.bidon.ca" # does not work right now
-              # "dash-to-panel@jderose9.github.com"
-              # "Vitals@CoreCodingom"
-              # "primary_input_on_lockscreen@sagidayan.com"
+              "hide-top-bar@tuxor1337"
             ];
           };
         };
