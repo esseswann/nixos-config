@@ -18,7 +18,7 @@
   time.hardwareClockInLocalTime = true;
 
   fileSystems."/boot" = {
-    ## Boot from windows created partition
+    ## Boot from Windows created boot partition
     device = "/dev/disk/by-label/SYSTEM";
     fsType = "vfat";
     options = [
