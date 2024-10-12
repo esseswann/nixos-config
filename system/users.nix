@@ -8,7 +8,7 @@
   users.users.jsus = {
     isNormalUser = true;
     description = "jsus";
-    extraGroups = [ 
+    extraGroups = [
       "networkmanager"
       "media"
       "wheel"

@@ -1,6 +1,7 @@
-{ pkgs, ... }:{
+{ pkgs, ... }:
+{
 
-  boot = { 
+  boot = {
     kernelPackages = pkgs.linuxPackages_6_11;
 
     loader = {
@@ -11,15 +12,15 @@
 
     kernelParams = [
       "quiet"
-      "udev.log_level=0" 
+      "udev.log_level=0"
     ];
 
     plymouth = {
       enable = true;
-      theme  = "bgrt";
+      theme = "bgrt";
     };
 
-    initrd.verbose  = false;
+    initrd.verbose = false;
     consoleLogLevel = 0;
   };
 }

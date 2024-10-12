@@ -1,14 +1,14 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./system
-      ./wm
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./system
+    ./wm
+  ];
 
-  services.xserver.xkb.layout = "us,ru"; ## FIXME
+  services.xserver.xkb.layout = "us,ru"; # # FIXME
   services.printing.enable = true;
   # programs.firefox.enable = true;
 
@@ -37,6 +37,8 @@
     vlc
     python3
     gparted
+    nil
+    pkgs.nixfmt-rfc-style
   ];
 
   system.stateVersion = "24.05";

@@ -9,8 +9,11 @@
 
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 80 443 ];
-      allowedUDPPortRanges = [];
+      allowedTCPPorts = [
+        80
+        443
+      ];
+      allowedUDPPortRanges = [ ];
     };
 
     # FIXME

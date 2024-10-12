@@ -1,8 +1,9 @@
-{ pkgs, ... }:{
-  services = { 
-    gvfs.enable    = true;
+{ pkgs, ... }:
+{
+  services = {
+    gvfs.enable = true;
     udisks2.enable = true;
-    devmon.enable  = true;
+    devmon.enable = true;
   };
 
   environment.systemPackages = with pkgs; [

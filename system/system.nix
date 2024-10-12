@@ -1,13 +1,13 @@
 {
   nix = {
-    settings = { 
+    settings = {
       auto-optimise-store = true;
       experimental-features = "nix-command flakes";
     };
     gc = {
       automatic = true;
-      dates     = "weekly";
-      options   = "--delete-older-than 7d";
+      dates = "weekly";
+      options = "--delete-older-than 7d";
     };
   };
 
@@ -15,11 +15,14 @@
   fileSystems."/home/jsus/share" = {
     device = "/dev/disk/by-label/SHARE";
     fsType = "ntfs";
-    options = [ 
-      "users" 
+    options = [
+      "users"
       "nofail"
     ];
   };
 
-  hardware.opengl.enable = true; 
+  hardware.opengl.enable = true;
+
+  ## For dualboot Windows
+  time.hardwareClockInLocalTime = true;
 }

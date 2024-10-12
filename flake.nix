@@ -1,4 +1,5 @@
 {
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
@@ -8,11 +9,21 @@
     };
   };
 
-  outputs = inputs: {
-    nixosConfigurations.blackbox = inputs.nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [ ./configuration.nix ];
-      specialArgs = { inherit inputs; };
+  outputs =
+    inputs:
+    let
+      var = {
+        user = "jsus";
+      };
+    in
+    {
+      nixosConfigurations.blackbox = inputs.nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ ./configuration.nix ];
+        specialArgs = {
+          inherit inputs;
+          inherit var;
+        };
+      };
     };
-  };
 }
