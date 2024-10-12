@@ -11,12 +11,6 @@
   services.xserver.xkb.layout = "us,ru"; # # FIXME
   services.printing.enable = true;
 
-  ## FIXME move to users
-  users.users.jsus = {
-    shell = pkgs.fish;
-  };
-
-  programs.fish.enable = true;
   programs.git = {
     enable = true;
     # FIXME
@@ -32,7 +26,6 @@
     inputs.yandex-browser.packages.x86_64-linux.yandex-browser-stable
     wine64
     qbittorrent
-    alacritty
     vlc
     python3
     gparted
