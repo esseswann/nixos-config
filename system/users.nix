@@ -1,3 +1,4 @@
+{ var, ... }:
 {
 
   nix.settings.trusted-users = [
@@ -5,9 +6,8 @@
     "@wheel"
   ];
 
-  users.users.jsus = {
+  users.users.${var.user} = {
     isNormalUser = true;
-    description = "jsus";
     extraGroups = [
       "networkmanager"
       "media"

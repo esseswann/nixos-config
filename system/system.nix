@@ -1,3 +1,4 @@
+{ var, ... }:
 {
   nix = {
     settings = {
@@ -11,8 +12,7 @@
     };
   };
 
-  ## FIXME jsus
-  fileSystems."/home/jsus/share" = {
+  fileSystems."/home/${var.user}/share" = {
     device = "/dev/disk/by-label/SHARE";
     fsType = "ntfs";
     options = [
