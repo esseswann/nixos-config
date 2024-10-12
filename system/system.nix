@@ -12,6 +12,31 @@
     };
   };
 
+  hardware.opengl.enable = true;
+
+  ## For dualboot Windows
+  time.hardwareClockInLocalTime = true;
+
+  fileSystems."/boot" = {
+    ## Boot from windows created partition
+    device = "/dev/disk/by-label/SYSTEM";
+    fsType = "vfat";
+    options = [
+      "fmask=0077"
+      "dmask=0077"
+    ];
+  };
+
+  fileSystems."/" = {
+    device = "/dev/disk/by-label/nixos";
+    fsType = "ext4";
+  };
+
+  fileSystems."/home" = {
+    device = "/dev/disk/by-label/home";
+    fsType = "ext4";
+  };
+
   fileSystems."/home/${var.user}/share" = {
     device = "/dev/disk/by-label/SHARE";
     fsType = "ntfs";
@@ -20,9 +45,4 @@
       "nofail"
     ];
   };
-
-  hardware.opengl.enable = true;
-
-  ## For dualboot Windows
-  time.hardwareClockInLocalTime = true;
 }

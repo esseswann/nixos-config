@@ -10,7 +10,6 @@
 
   services.xserver.xkb.layout = "us,ru"; # # FIXME
   services.printing.enable = true;
-  # programs.firefox.enable = true;
 
   ## FIXME move to users
   users.users.jsus = {
