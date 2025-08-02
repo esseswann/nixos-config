@@ -4,32 +4,24 @@ let
   # Define the Alacritty config as a Nix string → turned into a file
   filename = "alacritty.toml";
   alacrittyConfig = pkgs.writeText filename ''
-    # Window settings
     [window]
     decorations = "none"
     startup_mode = "Maximized"
 
-    # Padding
     [window.padding]
     x = 24
     y = 24
 
-    # Font settings
-    [font]
-    size = 12.0
-
     [font.normal]
     family = "Fira Code"
-    style = "Regular"
+    style = "Light"
 
-    # Example color scheme (dark)
+    [font]
+    size = 15.0
+
     [colors.primary]
     background = "#000000"
-    foreground = "#cccccc"
-
-    # Optional: cursor style
-    [cursor]
-    style = "Beam"
+    foreground = "#abb2bf"
   '';
 in
 {
