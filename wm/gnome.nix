@@ -1,15 +1,18 @@
-{ pkgs, lib, ... }:
+{ lib, pkgs, ... }:
 {
 
   services = {
     xserver.desktopManager.gnome.enable = true;
     gnome = {
       rygel.enable = false;
-      core-utilities.enable = false;
+      core-apps.enable = false;
     };
   };
 
-  environment.systemPackages = with pkgs; [ gnome.nautilus ];
+  environment.systemPackages = with pkgs; [
+    gnomeExtensions.hide-top-bar
+    gnomeExtensions.clipboard-history
+  ];
 
   programs.dconf = {
     enable = true;
@@ -50,8 +53,8 @@
               "Alacritty.desktop"
             ];
             enabled-extensions = [
-              "clipboard-history@alexsaveau.dev"
-              "hide-top-bar@tuxor1337"
+              pkgs.gnomeExtensions.hide-top-bar.extensionUuid
+              pkgs.gnomeExtensions.clipboard-history.extensionUuid
             ];
           };
         };

@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  var,
+  ...
+}:
 
 {
   imports = [
@@ -8,14 +13,15 @@
     ./wm
   ];
 
-  services.xserver.xkb.layout = "us,ru"; # # FIXME
+  services.xserver.xkb.layout = "us,ru"; # FIXME needs extra action in Gnome settings for some reason
   services.printing.enable = true;
 
   programs.git = {
     enable = true;
-    # FIXME
-    # userName  = "jsus";
-    # userEmail = "a.lebedev@itcanfly.org";
+    config = {
+      user.name = var.user;
+      user.email = "a.lebedev@itcanfly.org";
+    };
   };
 
   environment.systemPackages = with pkgs; [
@@ -31,7 +37,8 @@
     gparted
     nil
     pkgs.nixfmt-rfc-style
+    nautilus
   ];
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.05";
 }

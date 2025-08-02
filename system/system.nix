@@ -12,7 +12,7 @@
     };
   };
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   ## For dualboot Windows
   time.hardwareClockInLocalTime = true;
