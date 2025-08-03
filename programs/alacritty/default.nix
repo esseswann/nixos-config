@@ -1,7 +1,6 @@
 { var, pkgs, ... }:
 
 let
-  # Define the Alacritty config as a Nix string → turned into a file
   filename = "alacritty.toml";
   path = "${var.dotConfig}/alacritty";
 in
@@ -12,11 +11,10 @@ in
       ln -sf /etc/nixos/programs/alacritty/${filename} ${path}/${filename}
     '';
   };
+
   programs.fish.enable = true;
 
-  users.users.${var.user} = {
-    shell = pkgs.fish;
-  };
+  users.users.${var.user}.shell = pkgs.fish;
 
   environment.systemPackages = with pkgs; [ alacritty ];
 }
