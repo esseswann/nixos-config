@@ -1,0 +1,95 @@
+{
+  // === VISUAL & UI ===
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "window.restoreFullscreen": true,
+
+  // --- Colors ---
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "editor.background": "#000",
+      "tab.inactiveBackground": "#000",
+      "terminal.background": "#000",
+      "sideBar.background": "#000"
+    }
+  },
+
+  // --- Editor Visuals ---
+  "editor.fontFamily": "Fira Code Light",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.indentSize": 2,
+
+  // --- Terminal Visuals ---
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontFamily": "Fira Code Light",
+
+  // --- File Explorer & Navigation UI ---
+  "breadcrumbs.enabled": false,
+
+  // === FORMATTING & DEFAULTS ===
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[graphql]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    // "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    // "editor.formatOnSave": true
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide",
+    "editor.formatOnSave": true
+  },
+  "vscOrganizeImports.formatOnSave": false,
+
+  // === GIT ===
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+
+  // === FILE MANAGEMENT ===
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // === LANGUAGE FEATURES ===
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // === DIFF EDITOR ===
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // === EXTENSIONS ===
+  "extensions.ignoreRecommendations": false,
+  "chat.commandCenter.enabled": false,
+
+  // === NIX LANGUAGE SERVER ===
+  "nix.enableLanguageServer": true,
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": {
+        "command": ["nixfmt"]
+      }
+    }
+  },
+
+  // === DEV CONTAINERS ===
+  "dev.containers.executeInWSL": true
+}

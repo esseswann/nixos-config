@@ -1,0 +1,18 @@
+[window]
+decorations = "none"
+startup_mode = "Maximized"
+
+[window.padding]
+x = 24
+y = 24
+
+[font.normal]
+family = "Fira Code"
+style = "Light"
+
+[font]
+size = 15.0
+
+[colors.primary]
+background = "#000000"
+foreground = "#abb2bf"

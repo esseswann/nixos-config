@@ -11,6 +11,7 @@
     ./hardware-configuration.nix
     ./system
     ./wm
+    ./programs
   ];
 
   services.xserver.xkb.layout = "us,ru"; # FIXME needs extra action in Gnome settings for some reason
@@ -25,7 +26,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    vscode
     vim
     thunderbird
     telegram-desktop
