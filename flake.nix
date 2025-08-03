@@ -14,6 +14,7 @@
     let
       var = {
         user = "jsus";
+        dotConfig = "/home/${var.user}/.config";
       };
     in
     {

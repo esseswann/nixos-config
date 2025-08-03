@@ -3,16 +3,17 @@
 let
   # Define the Alacritty config as a Nix string → turned into a file
   filename = "alacritty.toml";
+  path = "${var.dotConfig}/alacritty";
   alacrittyConfig = pkgs.writeText filename (builtins.readFile ./${filename});
 in
 {
   system.activationScripts.alacritty = {
     text = ''
-      mkdir -p /home/${var.user}/.config/alacritty
+      mkdir -p ${path}
 
-      cp ${alacrittyConfig} /home/${var.user}/.config/alacritty/${filename}
+      cp ${alacrittyConfig} ${path}${filename}
 
-      chown -R ${var.user}:users /home/${var.user}/.config/alacritty
+      chown -R ${var.user}:users ${path}
     '';
   };
   programs.fish.enable = true;
