@@ -37,12 +37,6 @@
             night-light-schedule-automatic = true;
           };
 
-          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-            binding = "<Super>Return";
-            command = "alacritty";
-            name = "open-terminal";
-          };
-
           "org/gnome/shell" = {
             disable-user-extensions = false;
             favorite-apps = [

@@ -8,6 +8,7 @@
     ./vscode
     ./alacritty
     ./git.nix
+    ./docker.nix
   ];
 
   environment.systemPackages = with pkgs; [
