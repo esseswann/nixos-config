@@ -9,6 +9,5 @@
     ./users.nix
     ./nixpkgs.nix
     ./fonts.nix
-    ./terminal
   ];
 }
