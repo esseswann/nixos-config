@@ -8,6 +8,7 @@
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
   "window.restoreFullscreen": true,
+  "window.zoomLevel": 1,
 
   // --- Colors ---
   "workbench.colorCustomizations": {
