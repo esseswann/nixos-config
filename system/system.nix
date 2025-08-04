@@ -1,4 +1,4 @@
-{ var, ... }:
+{ var, pkgs, ... }:
 {
   nix = {
     settings = {
@@ -12,7 +12,13 @@
     };
   };
 
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+      libva
+    ];
+  };
 
   ## For dualboot Windows
   time.hardwareClockInLocalTime = true;
