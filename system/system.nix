@@ -14,6 +14,7 @@
 
   hardware.graphics = {
     enable = true;
+    # Without this VLC does not use acceleration
     extraPackages = with pkgs; [
       intel-media-driver
       libva
