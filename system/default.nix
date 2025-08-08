@@ -8,8 +8,8 @@
     ./system.nix
     ./users.nix
     ./nixpkgs.nix
-    ./fonts.nix
     ./tpm.nix
     ./ssh.nix
+    ./fonts
   ];
 }
