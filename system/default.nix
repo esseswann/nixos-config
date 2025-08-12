@@ -10,6 +10,7 @@
     ./nixpkgs.nix
     ./tpm.nix
     ./ssh.nix
+    ./printing.nix
     ./fonts
   ];
 }
