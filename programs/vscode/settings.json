@@ -42,6 +42,11 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
 
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.inlayHints.enabled": "on",
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   "[html]": {
     "editor.formatOnSave": true
   },
@@ -49,7 +54,7 @@
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    // "editor.formatOnSave": true
+    "editor.formatOnSave": true
   },
   "[javascript]": {
     // "editor.formatOnSave": true
@@ -92,5 +97,6 @@
   },
 
   // === DEV CONTAINERS ===
-  "dev.containers.executeInWSL": true
+  "dev.containers.executeInWSL": true,
+  "remote.autoForwardPortsSource": "hybrid"
 }
