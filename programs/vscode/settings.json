@@ -98,5 +98,6 @@
 
   // === DEV CONTAINERS ===
   "dev.containers.executeInWSL": true,
-  "remote.autoForwardPortsSource": "hybrid"
+  "remote.autoForwardPortsSource": "hybrid",
+  "jupyter.askForKernelRestart": false
 }
