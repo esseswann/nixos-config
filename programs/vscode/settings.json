@@ -57,7 +57,7 @@
     // "editor.formatOnSave": true
   },
   "[javascript]": {
-    // "editor.formatOnSave": true
+    "editor.formatOnSave": true
   },
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide",
