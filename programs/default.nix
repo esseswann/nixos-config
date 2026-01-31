@@ -27,5 +27,6 @@
     pkgs.nixfmt-rfc-style
     nautilus
     libreoffice
+    openscad
   ];
 }

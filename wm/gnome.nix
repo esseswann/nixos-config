@@ -12,6 +12,7 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.hide-top-bar
     gnomeExtensions.clipboard-history
+    gnome-network-displays
   ];
 
   programs.dconf = {

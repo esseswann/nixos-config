@@ -99,5 +99,7 @@
   // === DEV CONTAINERS ===
   "dev.containers.executeInWSL": true,
   "remote.autoForwardPortsSource": "hybrid",
-  "jupyter.askForKernelRestart": false
+  "dev.containers.defaultExtensions": [
+    "qwenlm.qwen-code-vscode-ide-companion"
+  ]
 }

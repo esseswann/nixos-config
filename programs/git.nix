@@ -5,6 +5,7 @@
     config = {
       user.name = var.user;
       user.email = "a.lebedev@itcanfly.org";
+      core.editor = "vim";
     };
   };
 }
