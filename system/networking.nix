@@ -7,6 +7,15 @@
       127.0.0.1 zifer.site
     '';
 
+    # networkmanager.dns = "none";
+
+    # nameservers = [
+    #   "77.88.8.8" # Yandex
+    #   "77.88.8.1" # Yandex
+    #   "8.8.8.8" # Google
+    #   "1.1.1.1" # Google
+    # ];
+
     firewall = {
       enable = true;
       allowedTCPPorts = [
