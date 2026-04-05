@@ -101,5 +101,6 @@
   "remote.autoForwardPortsSource": "hybrid",
   "dev.containers.defaultExtensions": [
     "qwenlm.qwen-code-vscode-ide-companion"
-  ]
+  ],
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
