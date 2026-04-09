@@ -3,6 +3,9 @@
   inputs,
   ...
 }:
+let
+  yc = pkgs.callPackage ./yc { };
+in
 {
   imports = [
     ./vscode
@@ -28,5 +31,6 @@
     nautilus
     libreoffice
     openscad
+    yc
   ];
 }
