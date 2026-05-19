@@ -11,6 +11,7 @@
     ./tpm.nix
     ./ssh.nix
     ./printing.nix
+    ./tg-ws-proxy.nix
     ./fonts
   ];
 }

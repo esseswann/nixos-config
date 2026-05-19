@@ -2,7 +2,7 @@
 {
 
   services = {
-    xserver.desktopManager.gnome.enable = true;
+    desktopManager.gnome.enable = true;
     gnome = {
       rygel.enable = false;
       core-apps.enable = false;

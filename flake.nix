@@ -1,12 +1,14 @@
 {
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
 
     yandex-browser = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:miuirussia/yandex-browser.nix";
     };
+
+    tg-ws-proxy.url = "github:pialtor/tg-ws-proxy-flake";
   };
 
   outputs =

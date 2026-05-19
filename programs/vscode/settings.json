@@ -100,7 +100,11 @@
   "dev.containers.executeInWSL": true,
   "remote.autoForwardPortsSource": "hybrid",
   "dev.containers.defaultExtensions": [
-    "qwenlm.qwen-code-vscode-ide-companion"
+    "rooveterinaryinc.roo-cline",
+    "graphql.vscode-graphql",
+    "alfnielsen.vsc-organize-imports"
   ],
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "idf.hasWalkthroughBeenShown": true,
+  "debug.disassemblyView.showSourceCode": false
 }
